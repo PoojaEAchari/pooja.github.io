@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groceries List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Groceries List</h1>
+    <!-- Form to add item -->
+    <form id="addItemForm">
+        <input type="text" id="itemName" placeholder="Item name" required>
+        <input type="number" id="itemQuantity" placeholder="Quantity" required>
+        <button type="submit">Add Item</button>
+    </form>
+    <!-- Display items -->
+    <ul id="itemList"></ul>
+    <!-- JavaScript code -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
